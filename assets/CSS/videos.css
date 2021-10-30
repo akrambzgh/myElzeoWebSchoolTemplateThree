@@ -1,0 +1,61 @@
+.vedios {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+.vedios .holder {
+  display: flex;
+  justify-content: center;
+  background-color: var(--main-background-color);
+  border: 1px solid #ddd;
+}
+@media (max-width: 991px) {
+  .vedios .holder {
+    flex-direction: column;
+  }
+}
+
+.vedios .holder .list {
+  min-width: 300px;
+  padding: 15px;
+  border-left: 1px solid #ddd;
+}
+.vedios .holder .list .name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--main-color);
+  font-size: 17px;
+  font-weight: bold;
+}
+.vedios .holder .list .name h3 {
+  margin: 0;
+}
+.vedios .holder .list ul.videos-list li {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+.vedios .holder .list ul.videos-list li span {
+  display: block;
+  margin-top: 5px;
+  color: #777;
+  font-size: 15px;
+}
+.vedios .holder .preveiw {
+  background-color: #a4a4a4;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.vedios .holder .preveiw img {
+  max-width: 100%;
+}
+.vedios .holder .preveiw span {
+  display: block;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}

@@ -1,0 +1,145 @@
+.features {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+.features .features-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+  gap: 30px;
+}
+.features .features-content .box {
+  border: 1px solid #ececec;
+  padding: 0 0 30px 0;
+  overflow: hidden;
+}
+.features .features-content .box .image {
+  position: relative;
+}
+.features .features-content .box .image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 0 0 120px 350px;
+  border-color: transparent transparent white transparent;
+  transition: var(--main-transition);
+}
+.features .features-content .box .image:hover::after {
+  border-style: solid;
+  border-width: 0px 350px 120px 0;
+  border-color: transparent transparent white transparent;
+}
+@media (max-width: 991px) {
+  .features .features-content .box .image:hover::after {
+    border-width: 0px 700px 120px 0;
+  }
+}
+@media (min-width: 767px) {
+  .features .features-content .box .image:hover::after {
+    border-width: 0px 450px 120px 0;
+  }
+}
+.features .features-content .box .image::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.features .features-content .box .image.red::before {
+  background-color: rgb(238, 68, 54 , 0.5);
+}
+.features .features-content .box .image.green::before {
+  background-color: rgb(0, 151, 131 , 0.5);
+}
+.features .features-content .box .image.blue::before {
+  background-color: rgb(33, 150, 243 , 0.5);
+}
+.features .features-content .box img {
+  max-width: 100%;
+}
+.features .features-content .content {
+  text-align: center;
+  padding: 0 15px;
+}
+.features .features-content .content .heading{
+    position: relative;
+width: fit-content;
+margin: 0 auto;
+}
+.features .features-content .content .heading::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;  
+  width: 70%;
+  height: 5px;
+  margin-top: 10px; 
+}
+.features .features-content .content .heading.red::after {
+  background-color: rgb(238, 68, 54);
+}
+.features .features-content .content .heading.green::after {
+  background-color: rgb(0, 151, 131);
+}
+.features .features-content .content .heading.blue::after {
+  background-color: var(--main-color);
+}
+
+.features .features-content .content p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #777;
+  margin-top: 10px;
+}
+
+.features .features-content .content button {
+  position: relative;
+  padding: 15px 25px;
+  background: 0;
+  border-radius: 5px;
+  border: 2px solid;
+  font-size: 18px;
+  font-weight: bold;
+  transition: var(--main-transition);
+}
+.features .features-content .content button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: var(--main-transition);
+}
+.features .features-content .content button.red::before {
+  background-color: rgb(238, 68, 54);
+}
+.features .features-content .content button.green::before {
+  background-color: rgb(0, 151, 131);
+}
+.features .features-content .content button.blue::before {
+  background-color: var(--main-color);
+}
+.features .features-content .content button:hover::before {
+  width: 100%;
+}
+.features .features-content .content button.red {
+  border-color: rgb(238, 68, 54);
+  color: rgb(238, 68, 54);
+}
+.features .features-content .content button.green {
+  border-color: rgb(0, 151, 131);
+  color: rgb(0, 151, 131);
+} 
+.features .features-content .content button.blue {
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+.features .features-content .content button:hover {
+    color: #fff;
+}

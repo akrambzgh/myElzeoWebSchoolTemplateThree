@@ -1,0 +1,118 @@
+.discount {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.discount .image {
+  width: 50%;
+  background-image: url(../images/discount-sectoin/discount-background1.jpg);
+  background-size: cover;
+  position: relative;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .discount .image {
+    width: 100%;
+  }
+}
+.discount .image::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(32, 148, 243 , 0.9);
+  z-index: 1;
+}
+
+.discount .image .content {
+  position: relative;
+  z-index: 2;
+  padding: 80px 30px;
+}
+.discount .image .content h1 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0;
+}
+.discount .image .content p {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.6;
+}
+.discount .image .content img {
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+.discount .form {
+  width: 50%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 30px;
+}
+@media (max-width: 991) {
+  .discount .form {
+    padding-top: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .discount .form {
+    width: 100%;
+  }
+}
+.discount .form .content h1 {
+  margin: 0 0 30px 0;
+}
+.discount .form .content .input {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  background-color: #f9f9f9;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+}
+.discount .form .content .input:focus {
+  outline: none;
+}
+.discount .form .content textarea.input {
+  resize: none;
+  height: 200px;
+}
+.discount .form .content input[type = "submit"] {
+  background-color: var(--main-color);
+  display: block;
+  padding: 15px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.discount .form .content input[type = "submit"]:hover {
+  background-color: var(--main-color-alt);
+}
+
+
+
+
+
+
+
+
+.discount .content {
+  text-align: center;
+}

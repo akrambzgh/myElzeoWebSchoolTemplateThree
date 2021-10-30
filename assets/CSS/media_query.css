@@ -1,0 +1,22 @@
+/* Media Query */
+
+/* Small Screens */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screens */
+@media screen and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large Screens */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}

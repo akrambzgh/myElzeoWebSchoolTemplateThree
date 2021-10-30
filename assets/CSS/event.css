@@ -1,0 +1,96 @@
+.event {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+.event .event-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .event .event-content {
+    flex-direction: column;
+  }
+}
+.event .event-content .image {
+  margin-right: 20px;
+}
+
+.event .event-content .info .time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  gap: 10px;
+}
+.event .event-content .info .time .box {
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  text-align: center;
+}
+.event .event-content .info .time .box h1 {
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid #ededed;
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--main-color);
+}
+.event .event-content .info .time .box span {
+  padding: 7px;
+  display: block;
+}
+
+.event .event-content .info .text {
+  margin: 50px auto 0;
+  text-align: center;
+}
+.event .event-content .info .text p {
+  color: #777;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+
+.event .subscribe {
+  margin: 50px auto;
+  text-align: center;
+  background-color: #ececec;
+  border-radius: 50px;
+  width: 50%;
+  padding: 20px 15px;
+}
+@media (max-width: 991px) {
+  .event .subscribe {
+    width: 100%;
+  }
+}
+.event .subscribe .subscribe-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.event .subscribe .subscribe-content input {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 50px;
+  border: 0;
+  outline: none;
+  width: 70%;
+  display: block;
+  margin-right: 10px;
+}
+.event .subscribe .subscribe-content button {
+  padding: 20px;
+  border-radius: 50px;
+  color: #fff;
+  border: 0;
+  outline: none;
+  background-color: var(--main-color);
+  display: block;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.event .subscribe .subscribe-content button:hover {
+  background-color: var(--main-color-alt);
+}

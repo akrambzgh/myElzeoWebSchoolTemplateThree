@@ -1,0 +1,59 @@
+.skills {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+.skills .skills-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .skills .skills-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.skills .skills-content .skills-side {
+  width: 50%;
+}
+@media (max-width: 991px) {
+  .skills .skills-content .skills-side {
+    width: 100%;
+  }
+}
+.skills .skills-content .box .name-and-pecentige {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills .skills-content .box .name-and-pecentige .percentege h4 {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  color: var(--main-color);
+}
+
+.skills .skills-content .box .line {
+  width: 100%;
+  height: 20px;
+  background-color: #ececec;
+  position: relative;
+}
+.skills .skills-content .box .line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--main-color);
+}
+.skills .skills-content .box.html .line::after,
+.skills .skills-content .box.py .line::after {
+  width: 80%;
+}
+.skills .skills-content .box.css .line::after {
+  width: 85%;
+}
+.skills .skills-content .box.js .line::after {
+  width: 75%;
+}
